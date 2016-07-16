@@ -1,3 +1,10 @@
-<h1>
-  {{title}}
-</h1>
+<h1>{{title}}</h1>
+
+  <p>There's going to be some stuff right there:</p>
+
+  <app-details-holder (submitted)='onNotify($event)' [displayModal]="displayStatus"></app-details-holder>
+
+  <p>
+    <a (click)="onToggle()">Toggle Modal</a>
+  </p>
+
